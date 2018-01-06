@@ -50,8 +50,5 @@ function reverse(str) {
     // adding es6 syntax
     // return str.split('').reduce((rev, char) => char + rev, '');
 }
-// reverse('Hello');
-// reverse('Greetings!@');
-// reverse(' ! M a r k ?  *   $ ');
-// reverse('apple');
+
 module.exports = reverse;
