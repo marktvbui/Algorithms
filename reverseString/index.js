@@ -37,6 +37,7 @@ function reverse(str) {
     // solution #2a
     // this solution is the old fashion for looop
     var reversed = '';
+    console.log('string to reverse: ' + str);
     for (var i = str.length - 1; i >= 0; i--) {
         reversed += str[i];
         console.log(reversed);
@@ -49,6 +50,8 @@ function reverse(str) {
     // adding es6 syntax
     // return str.split('').reduce((rev, char) => char + rev, '');
 }
-reverse('mark');
-reverse('! M a r k ? ');
+// reverse('Hello');
+// reverse('Greetings!@');
+// reverse(' ! M a r k ?  *   $ ');
+// reverse('apple');
 module.exports = reverse;
