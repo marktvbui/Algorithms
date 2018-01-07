@@ -7,12 +7,24 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
+
 function palindrome(str) {
-
+    var originalStr = str;
+    var reversed = '';
+    for (var i = originalStr.length - 1; i >= 0; i--) {
+        reversed += originalStr[i];
+    }
+    if (originalStr === reversed) {
+        console.log('YES! ' + originalStr + ' is a palindrome');
+        return true;
+    } else {
+        console.log('sorry, ' + originalStr + ' is not a palindrome');
+        return false;
+    }
 }
-
-palindrome('abba');
+palindrome('aba');
+palindrome('pennep');
 palindrome('abcdefg');
-palindrome('12321');
-palindrome('!xxxx!');
-palindrome('Mark');
+palindrome('1000000001');
+// palindrome('!xxxx!');
+// palindrome('Mark');
