@@ -36,7 +36,7 @@ function reverseInt(int) {
 //    .reverse()
 //    .join('');
 
-//  test = parseInt(reverseNum) * Math.sign(int);
+//  const test = parseInt(reverseNum) * Math.sign(int);
 //  console.log('reversed :' + test);
 //  return test;
 }
