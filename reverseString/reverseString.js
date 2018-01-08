@@ -15,6 +15,7 @@ function reverse(str) {
     }
     return reversed;
 }
+
 reverse('Hello');
 reverse('Greetings!@');
 reverse(' ! M a r k ?  *   $ ');
