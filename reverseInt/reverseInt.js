@@ -9,20 +9,46 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(int) {
-  console.log('number to reverse: ' + int)
   let num = '';
   let reverseNum = '';
-  var test;
-  num = int.toString();
-  for (var i = num.length - 1; i >= 0; i--) {
-    reverseNum += num[i];
-  }
-  test = parseInt(reverseNum) * Math.sign(int);
-  console.log(test);
-  return test;
-}
+  let finalNum;
 
+  console.log('number to reverse: ' + int);
 
+  if (int < 0)
+    {
+      num = int.toString();
+      for (var i = num.length -1; i >= 0; i--) {
+        reverseNum += num[i];
+      }
+      finalNum = parseInt(reverseNum) * -1;
+      console.log('reversed negative number: ' + finalNum);
+      return finalNum;
+    } else
+    {
+      num = int.toString();
+      for (var i = num.length -1; i >= 0; i--) {
+        reverseNum += num[i];
+      }
+      finalNum = parseInt(reverseNum);
+      console.log('reversed number: ' + finalNum);
+      return finalNum;
+    }
+
+  // solution with helpers
+//   console.log('number to reverse: ' + int);
+//   const reverseNum = int
+//     .toString()
+//     .split('')
+//     .reverse()
+//     .join('');
+
+//   test = parseInt(reverseNum) * Math.sign(int);
+//   console.log('reversed :' + test);
+//   return test;
+// }
+
+reverseInt(500);
 reverseInt(123);
 reverseInt(38);
 reverseInt(-4);
