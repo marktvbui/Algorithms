@@ -15,24 +15,17 @@ function reverseInt(int) {
 
   console.log('number to reverse: ' + int);
 
-  if (int < 0)
-    {
-      num = int.toString();
-      for (var i = num.length -1; i >= 0; i--) {
-        reverseNum += num[i];
-      }
+    num = int.toString();
+    for (var i = num.length - 1; i >=0; i--) {
+      reverseNum += num[i];
+    }
+    if (int < 0) {
       finalNum = parseInt(reverseNum) * -1;
-      console.log('reversed negative number: ' + finalNum);
-      return finalNum;
+      console.log('reversed -num: ' + finalNum);
     } else
     {
-      num = int.toString();
-      for (var i = num.length -1; i >= 0; i--) {
-        reverseNum += num[i];
-      }
       finalNum = parseInt(reverseNum);
-      console.log('reversed number: ' + finalNum);
-      return finalNum;
+      console.log('reversed num: ' + finalNum);
     }
 
 //  solution with helpers
