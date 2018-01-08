@@ -35,21 +35,21 @@ function reverseInt(int) {
       return finalNum;
     }
 
-  // solution with helpers
-//   console.log('number to reverse: ' + int);
-//   const reverseNum = int
-//     .toString()
-//     .split('')
-//     .reverse()
-//     .join('');
+//  solution with helpers
+//  console.log('number to reverse: ' + int);
+//  const reverseNum = int
+//    .toString()
+//    .split('')
+//    .reverse()
+//    .join('');
 
-//   test = parseInt(reverseNum) * Math.sign(int);
-//   console.log('reversed :' + test);
-//   return test;
-// }
+//  test = parseInt(reverseNum) * Math.sign(int);
+//  console.log('reversed :' + test);
+//  return test;
+}
 
-reverseInt(500);
-reverseInt(123);
-reverseInt(38);
-reverseInt(-4);
-reverseInt(-27);
+reverseInt(15)
+reverseInt(981)
+reverseInt(500)
+reverseInt(-15)
+reverseInt(-90)
