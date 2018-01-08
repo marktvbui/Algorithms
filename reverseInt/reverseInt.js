@@ -12,13 +12,18 @@ function reverseInt(int) {
   console.log('number to reverse: ' + int)
   let num = '';
   let reverseNum = '';
+  var test;
   num = int.toString();
   for (var i = num.length - 1; i >= 0; i--) {
     reverseNum += num[i];
   }
-  console.log('reversed number: ' + reverseNum);
+  test = parseInt(reverseNum) * Math.sign(int);
+  console.log(test);
+  return test;
 }
 
 
 reverseInt(123);
 reverseInt(38);
+reverseInt(-4);
+reverseInt(-27);
