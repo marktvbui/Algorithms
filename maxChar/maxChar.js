@@ -24,6 +24,10 @@ function maxChar(str) {
         }
     });
 
+    // for (let char of str) {
+    //     strObj[char] = strObj[char] + 1 || 1;
+    // }
+
     var maxKey = '';
     var currentMax = 0;
     for (var key in strObj) {
