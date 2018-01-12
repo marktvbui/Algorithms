@@ -17,24 +17,23 @@ function maxChar(str) {
         }
     });
 
-    var returnedEl = '';
+    var maxKey = '';
     var currentMax = 0;
     for (var key in strObj) {
-        console.log('current key: ' + key);
         if ((strObj[key]) > currentMax) {
-            console.log('current element: ' + strObj[key]);
             currentMax = strObj[key];
-            console.log('current max: ' + currentMax);
-            returnedEl = key;
-            console.log(returnedEl);
+            maxKey = key;
         };
     };
     console.log('');
-    console.log('**************************');
     console.log('final max: ' + currentMax);
-    console.log('maxed character: ' + returnedEl);
-    console.log('**************************');
+    console.log('maxed character: ' + maxKey);
+    console.log('');
+    return maxKey;
 };
 
 maxChar("aabcccccccd");
 maxChar("apple 1231111");
+
+
+module.exports = maxChar;
