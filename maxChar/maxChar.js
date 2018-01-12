@@ -17,15 +17,23 @@ function maxChar(str) {
         }
     });
 
-    var max = 0;
-    for (var test in strObj) {
-        if ((strObj[test]) > max) {
-            max = strObj;
-            console.log(test);
-            return test;
+    var returnedEl = '';
+    var currentMax = 0;
+    for (var key in strObj) {
+        console.log('current key: ' + key);
+        if ((strObj[key]) > currentMax) {
+            console.log('current element: ' + strObj[key]);
+            currentMax = strObj[key];
+            console.log('current max: ' + currentMax);
+            returnedEl = key;
+            console.log(returnedEl);
         };
     };
+    console.log('');
+    console.log('**************************');
+    console.log('final max: ' + currentMax);
+    console.log('maxed character: ' + returnedEl);
 };
 
-maxChar("abcccccccd")
+maxChar("aabcccccccd")
 // maxChar("apple 1231111")
