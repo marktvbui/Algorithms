@@ -5,12 +5,13 @@
 // of five print “buzz”. For numbers which are multiples
 // of both three and five print “fizzbuzz”.
 // --- Example
-//   fizzBuzz(5);
+//   fizzBuzz(15);
 //   1
 //   2
 //   fizz
 //   4
 //   buzz
+//   etc
 //   14
 //   fizzbuzz
 //   16
@@ -24,9 +25,11 @@ function fizzBuzz(num) {
         } else if ( (i % 5 === 0) ) {
             console.log('buzz');
         } else {
-            (console.log(i));
+            console.log(i);
         }
     }
 };
 
 fizzBuzz(100);
+
+// module.exports = fizzBuzz;
