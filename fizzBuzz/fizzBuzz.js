@@ -15,6 +15,18 @@
 //   fizzbuzz
 //   16
 
-function fizzBuzz(n) {
+function fizzBuzz(num) {
+    for (var i = 1; i <= num; i++){
+        if ( !(i % 3) && ( !(i % 5) ) ) {
+            console.log('fizzbuzz');
+        } else if ( !(i % 3) ){
+            console.log('fizz');
+        } else if ( !(i % 5) ) {
+            console.log('buzz');
+        } else {
+            (console.log(i));
+        }
+    }
+};
 
-}
+fizzBuzz(100);
