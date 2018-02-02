@@ -15,8 +15,8 @@ function reverseInt(int) {
     for (var i = num.length - 1; i >= 0; i--) {
       reverseNum += num[i];
     }
-    var test = parseInt(reverseNum) * Math.sign(int);
-    return test;
+    var reversedInt = parseInt(reverseNum) * Math.sign(int);
+    return reversedInt;
 }
 
 module.exports = reverseInt;

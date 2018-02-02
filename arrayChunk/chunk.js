@@ -7,3 +7,14 @@
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+
+function chunk(array, size) {
+    // use splice:
+    // var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
+    // var removed = myFish.splice(3, 1);
+    // removed is ["mandarin"]
+    // myFish is ["angel", "clown", "drum", "sturgeon"]
+};
+
+chunk([1,2,3,4], 2);
+module.exports = chunk;
