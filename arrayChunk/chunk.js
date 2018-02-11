@@ -14,7 +14,29 @@ function chunk(array, size) {
     // var removed = myFish.splice(3, 1);
     // removed is ["mandarin"]
     // myFish is ["angel", "clown", "drum", "sturgeon"]
+    let newArry = [];
+    function chunkArry() {
+        let tempArry = [];
+        console.log(array.length);
+        if (array.length > 0) {
+            console.log('this is working');
+            for (let i = 0; i < size; i++) {
+                tempArry.push(array[i]);
+            };
+        newArry.push(tempArry);
+        console.log(newArry);
+        if (size > 0) {
+            array.splice(0, size);
+            console.log('new array: ' + array);
+        }
+        chunkArry();
+        }
+    };
+    if (array.length > 0) {
+        chunkArry();
+    }
 };
 
-chunk([1,2,3,4], 2);
-module.exports = chunk;
+
+chunk([1,2,3,4,5,6,7,8,9,10,11,12,13], 3);
+// module.exports = chunk;
