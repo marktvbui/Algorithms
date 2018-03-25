@@ -16,8 +16,10 @@ function reverseInt(int) {
   console.log('number to reverse: ' + int);
 
     num = int.toString();
+    console.log(num);
     for (var i = num.length - 1; i >=0; i--) {
       reverseNum += num[i];
+      console.log(reverseNum);
     }
     if (int < 0) {
       finalNum = parseInt(reverseNum) * -1;
